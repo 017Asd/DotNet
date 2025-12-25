@@ -1,5 +1,0 @@
-C:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\obj\Debug\net10.0\Day5.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\obj\Debug\net10.0\Day5.AssemblyInfoInputs.cache
-C:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\obj\Debug\net10.0\Day5.AssemblyInfo.cs
-C:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\obj\Debug\net10.0\Day5.csproj.CoreCompileInputs.cache
-C:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\obj\Debug\net10.0\Day5.sourcelink.json
