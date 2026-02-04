@@ -1,0 +1,15 @@
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.AssemblyInfoInputs.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.AssemblyInfo.cs
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.csproj.CoreCompileInputs.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.sourcelink.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\bin\Debug\net10.0\6-1-26.exe
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\bin\Debug\net10.0\6-1-26.deps.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\bin\Debug\net10.0\6-1-26.runtimeconfig.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\bin\Debug\net10.0\6-1-26.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\bin\Debug\net10.0\6-1-26.pdb
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\refint\6-1-26.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.pdb
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\6-1-26.genruntimeconfig.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\6-1-26\obj\Debug\net10.0\ref\6-1-26.dll

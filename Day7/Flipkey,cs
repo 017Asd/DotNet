@@ -1,0 +1,42 @@
+using System;
+namespace Scenario
+{
+    public class FlipKeyhjggj
+    {
+        // public string? input;
+        // public string IsValid(string input)
+        // {
+        //     if(input.Length<6 || input==null){
+        //         return string.Empty();
+        //     }
+        
+        
+        //     string? low=input.ToLower();
+        //     for (int i = 0; i < input.Length; i++)
+        //     {
+        //         string? result=(int)input[i];
+        //         if (result % 2 != 0)
+        //         {
+        //             string? WithoutEvenAscii =+ input[i];
+        //         }
+
+
+        //     }
+        //     for (int i = WithoutEvenAscii.Length; i >= 0; i--)
+        //     {
+        //         string? reversed=+WithoutEvenAscii[i];
+        //     }
+        //     for(int i = 0; i <= reversed.Length; i++)
+        //     {
+        //         if (i % 2 == 0)
+        //         {
+        //             reversed[i]=reversed[i].ToUpper();
+        //         }
+        //     }
+        //     return reversed;
+        // }
+    }
+    
+    
+}
+
