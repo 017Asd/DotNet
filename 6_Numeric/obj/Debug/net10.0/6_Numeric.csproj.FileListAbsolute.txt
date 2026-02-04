@@ -1,0 +1,15 @@
+D:\DotnetR\M1\Exception\6_numeric\bin\Debug\net10.0\6_Numeric.exe
+D:\DotnetR\M1\Exception\6_numeric\bin\Debug\net10.0\6_Numeric.deps.json
+D:\DotnetR\M1\Exception\6_numeric\bin\Debug\net10.0\6_Numeric.runtimeconfig.json
+D:\DotnetR\M1\Exception\6_numeric\bin\Debug\net10.0\6_Numeric.dll
+D:\DotnetR\M1\Exception\6_numeric\bin\Debug\net10.0\6_Numeric.pdb
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.AssemblyInfoInputs.cache
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.AssemblyInfo.cs
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.csproj.CoreCompileInputs.cache
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.sourcelink.json
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.dll
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\refint\6_Numeric.dll
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.pdb
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\6_Numeric.genruntimeconfig.cache
+D:\DotnetR\M1\Exception\6_numeric\obj\Debug\net10.0\ref\6_Numeric.dll
