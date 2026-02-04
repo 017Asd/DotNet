@@ -1,0 +1,15 @@
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.AssemblyInfoInputs.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.AssemblyInfo.cs
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.csproj.CoreCompileInputs.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.sourcelink.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\bin\Debug\net10.0\Abstract.exe
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\bin\Debug\net10.0\Abstract.deps.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\bin\Debug\net10.0\Abstract.runtimeconfig.json
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\bin\Debug\net10.0\Abstract.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\bin\Debug\net10.0\Abstract.pdb
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\refint\Abstract.dll
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.pdb
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\Abstract.genruntimeconfig.cache
+c:\Users\asd\OneDrive\Documents\.net\checking\dotnet\Day5\Abstract\obj\Debug\net10.0\ref\Abstract.dll
