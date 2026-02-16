@@ -32,8 +32,8 @@ class Program
         // FIX HER
         adapter.Update(ds, "Employees");
         Console.WriteLine("Inserted successfully");
-        DataRow row = table.Rows[0];
-        row["Salary"] = 90000;
+        DataRow row = table.Rows[2];
+        row["Salary"] = 9000000;
 
         // VIEW CHANGES
         adapter.Update(ds, "Employees");
