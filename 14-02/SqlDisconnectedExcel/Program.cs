@@ -5,6 +5,7 @@
 using System;
 using System.Data;
 using Microsoft.Data.SqlClient;
+using System.Collections;
 
 class Program
 {
@@ -23,15 +24,20 @@ class Program
         DataTable table = ds.Tables["Employees"];
 
         DataRow rw = table.NewRow();
-        rw["EmployeeId"] = 1006;
-        rw["FullName"] = "Sachin";
-        rw["Department"] = "CTO";
-        rw["Salary"] = 750000;
+        rw["EmployeeId"] = 16;
+        rw["FullName"] = "Anuska";
+        rw["Department"] = "CFO";
+        rw["Salary"] = 7500000;
         table.Rows.Add(rw);
-
         // FIX HER
         adapter.Update(ds, "Employees");
-
         Console.WriteLine("Inserted successfully");
+        DataRow row = table.Rows[0];
+        row["Salary"] = 90000;
+
+        // VIEW CHANGES
+        adapter.Update(ds, "Employees");
+
+
     }
 }
