@@ -26,43 +26,36 @@ namespace Assignment
             BookUtility utility = new BookUtility();
             string choice = "";
 
+            
+
             do
             {
                 choice = Console.ReadLine();
-                int updatePrice = 0;
-                int updateStock = 0;
-
-                if (choice.Length > 1)
-                {
-                    List<string> choices = splitter(choice);
-                    choice = choices[0];
-
-                    if (choice == "2")
-                        updatePrice = int.Parse(choices[1]);
-
-                    if (choice == "3")
-                        updateStock = int.Parse(choices[1]);
-                }
 
                 switch (choice)
-                {
+            {
                     case "1":
                         utility.GetBookDetails(book);
                         break;
 
                     case "2":
-                        utility.UpdateBookPrice(book, updatePrice);
+                        int newPrice = int.Parse(Console.ReadLine());
+                        utility.UpdateBookPrice(book, newPrice);
                         break;
 
                     case "3":
-                        utility.UpdateBookStock(book, updateStock);
+                        int newStock = int.Parse(Console.ReadLine());
+                        utility.UpdateBookStock(book, newStock);
                         break;
 
                     case "4":
                         break;
-                }
+                    }
 
             } while (choice != "4");
+
+
+            
         }
     }
 }
