@@ -1,6 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
 using System;
-using DotNetEnv;
+
 class Program
 {
     static void Main()
