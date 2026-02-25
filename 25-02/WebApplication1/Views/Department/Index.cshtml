@@ -1,0 +1,169 @@
+﻿@using WebApplication1.Models
+@{
+    var depts = ViewBag.Departments as List<Department>;
+    var emps = ViewBag.Employees as List<Employee>;
+}
+
+<style>
+    .tab-btn {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        background: #ddd;
+        margin-right: 5px;
+    }
+
+    .active {
+        background: #2196F3;
+        color: white;
+    }
+
+    .form-section {
+        display: none;
+        margin-top: 20px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        width: 320px;
+    }
+
+    .view-btn {
+        padding: 8px 15px;
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+        background: #2196F3;
+        color: white;
+    }
+
+    table {
+        margin-top: 10px;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 6px 10px;
+    }
+</style>
+
+<h2>Add Entry</h2>
+
+<button class="tab-btn active" onclick="showForm('dept')">Add Department</button>
+<button class="tab-btn" onclick="showForm('emp')">Add Employee</button>
+
+<div id="dept" class="form-section" style="display:block;">
+    <h3>Add Department</h3>
+
+    <form asp-action="AddDepartment" method="post">
+        <label>Name</label><br />
+        <input type="text" name="Name" required /><br /><br />
+
+        <label>Location</label><br />
+        <input type="text" name="Location" required /><br /><br />
+
+        <button type="submit">Save Department</button>
+    </form>
+</div>
+
+<div id="emp" class="form-section">
+    <h3>Add Employee</h3>
+
+    <form asp-action="AddEmployee" method="post">
+        <label>Name</label><br />
+        <input type="text" name="EmpName" required /><br /><br />
+
+        <label>Designation</label><br />
+        <input type="text" name="Designation" required /><br /><br />
+
+        <label>Department</label><br />
+        <select name="DeptId" required>
+            <option value="">Select</option>
+            @if (depts != null)
+            {
+                foreach (var d in depts)
+                {
+                    <option value="@d.Id">@d.Name</option>
+                }
+            }
+        </select><br /><br />
+
+        <button type="submit">Save Employee</button>
+    </form>
+</div>
+
+<hr />
+
+<h3>View Stored Data</h3>
+
+<button class="view-btn" onclick="showData('dept')">Departments</button>
+<button class="view-btn" onclick="showData('emp')">Employees</button>
+<button class="view-btn" onclick="showData('both')">Both</button>
+
+<div id="deptData" style="display:none;">
+    <h3>Departments</h3>
+    <table border="1">
+        <tr><th>Id</th><th>Name</th><th>Location</th></tr>
+        @if (depts != null)
+        {
+            foreach (var d in depts)
+            {
+                <tr>
+                    <td>@d.Id</td>
+                    <td>@d.Name</td>
+                    <td>@d.Location</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<div id="empData" style="display:none;">
+    <h3>Employees</h3>
+    <table border="1">
+        <tr><th>Id</th><th>Name</th><th>Designation</th><th>Department</th></tr>
+        @if (emps != null)
+        {
+            foreach (var e in emps)
+            {
+                <tr>
+                    <td>@e.EmpId</td>
+                    <td>@e.EmpName</td>
+                    <td>@e.Designation</td>
+                    <td>@depts?.FirstOrDefault(d => d.Id == e.DeptId)?.Name</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+
+<script>
+    function showForm(type) {
+        document.getElementById("dept").style.display = "none";
+        document.getElementById("emp").style.display = "none";
+
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+
+        if (type === "dept") {
+            document.getElementById("dept").style.display = "block";
+            document.querySelectorAll(".tab-btn")[0].classList.add("active");
+        } else {
+            document.getElementById("emp").style.display = "block";
+            document.querySelectorAll(".tab-btn")[1].classList.add("active");
+        }
+    }
+
+    function showData(type) {
+        document.getElementById("deptData").style.display = "none";
+        document.getElementById("empData").style.display = "none";
+
+        if (type === "dept") {
+            document.getElementById("deptData").style.display = "block";
+        }
+        else if (type === "emp") {
+            document.getElementById("empData").style.display = "block";
+        }
+        else {
+            document.getElementById("deptData").style.display = "block";
+            document.getElementById("empData").style.display = "block";
+        }
+    }
+</script>

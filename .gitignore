@@ -480,3 +480,52 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+
+
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.log
+*.obj
+*.exe
+*.dll
+
+
+
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+
+
+*.publish.xml
+*.pubxml
+*.pubxml.user
+App_Data/*.mdf
+App_Data/*.ldf
+
+#
+
+packages/
+*.nupkg
+
+
+*.dbmdl
+*.jfm
+*.publishsettings
+
+############################################
+# Node (if any frontend scripts)
+############################################
+
+node_modules/
+
+############################################
+# OS files
+############################################
+
+.DS_Store
+Thumbs.db
