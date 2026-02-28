@@ -1,0 +1,76 @@
+@model IEnumerable<object>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<h2 style="margin-bottom:20px;">Search Results</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <div style="color:red;font-weight:bold;">
+        No results found.
+    </div>
+}
+else
+{
+    var first = Model.First();
+
+    if (first is Question.Models.FlightResult)
+    {
+        <table style="border-collapse:collapse;width:100%;font-family:Segoe UI;">
+            <thead style="background-color:#2c3e50;color:white;">
+                <tr>
+                    <th style="padding:10px;border:1px solid #ddd;">Flight</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Source</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Destination</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (Question.Models.FlightResult item in Model)
+            {
+                <tr style="background-color:#f9f9f9;">
+                    <td style="padding:8px;border:1px solid #ddd;">@item.FlightName</td>
+                    <td style="padding:8px;border:1px solid #ddd;">@item.Source</td>
+                    <td style="padding:8px;border:1px solid #ddd;">@item.Destination</td>
+                    <td style="padding:8px;border:1px solid #ddd;">₹ @item.TotalCost</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+    else if (first is Question.Models.FlightHotelResult)
+    {
+        <table style="border-collapse:collapse;width:100%;font-family:Segoe UI;">
+            <thead style="background-color:#27ae60;color:white;">
+                <tr>
+                    <th style="padding:10px;border:1px solid #ddd;">Flight</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Source</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Destination</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Hotel</th>
+                    <th style="padding:10px;border:1px solid #ddd;">Total Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (Question.Models.FlightHotelResult item in Model)
+            {
+                <tr style="background-color:#f9f9f9;">
+                    <td style="padding:8px;border:1px solid #ddd;">@item.FlightName</td>
+                    <td style="padding:8px;border:1px solid #ddd;">@item.Source</td>
+                    <td style="padding:8px;border:1px solid #ddd;">@item.Destination</td>
+                    <td style="padding:8px;border:1px solid #ddd;">@item.HotelName</td>
+                    <td style="padding:8px;border:1px solid #ddd;">₹ @item.TotalCost</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+}
+
+<div style="margin-top:20px;">
+    <a href="/Flight/Index"
+       style="padding:8px 14px;background:#3498db;color:white;text-decoration:none;border-radius:4px;">
+        Back to Search
+    </a>
+</div>

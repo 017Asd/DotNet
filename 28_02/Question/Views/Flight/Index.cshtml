@@ -1,0 +1,40 @@
+@model SearchViewModel
+
+@{
+    ViewData["Title"] = "Flight Search";
+}
+
+<h2>Flight Search</h2>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+
+    <div>
+        <label>Source</label>
+        <select asp-for="Source" asp-items="Model.SourceList">
+            <option value="">-- Select Source --</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Destination</label>
+        <select asp-for="Destination" asp-items="Model.DestinationList">
+            <option value="">-- Select Destination --</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Number Of Persons</label>
+        <input asp-for="NumberOfPersons" type="number" min="1" max="10" />
+    </div>
+
+    <div style="margin-top:10px;">
+        <button type="submit" formaction="/Flight/SearchFlights">
+            Search Flights Only
+        </button>
+
+        <button type="submit" formaction="/Flight/SearchFlightsWithHotels">
+            Search Flight + Hotel
+        </button>
+    </div>
+</form>
