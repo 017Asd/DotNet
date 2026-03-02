@@ -1,0 +1,41 @@
+@model IEnumerable<StudentPortalMVC.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "Enrollments";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between mb-3">
+        <h2>Enrollments</h2>
+        <a asp-action="Create" class="btn btn-dark">+ New Enrollment</a>
+    </div>
+
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Enroll Date</th>
+                <th>Payment Status</th>
+                <th>Paid Amount</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Student?.FullName</td>
+                <td>@item.Course?.Title</td>
+                <td>@item.EnrollDate</td>
+                <td>@item.PaymentStatus</td>
+                <td>@item.PaidAmount</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@item.EnrollmentId"
+                       class="btn btn-outline-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
