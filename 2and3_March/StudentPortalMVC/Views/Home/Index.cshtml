@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-5">
+
+    <h2 class="text-center mb-5">Student Portal Dashboard</h2>
+
+    <div class="row text-center">
+
+        <!-- STUDENTS -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light p-4 shadow-lg">
+                <h3>Students</h3>
+                <p>Manage student records</p>
+                <a asp-controller="Students"
+                   asp-action="Index"
+                   class="btn btn-outline-light">
+                   Open
+                </a>
+            </div>
+        </div>
+
+        <!-- COURSES -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light p-4 shadow-lg">
+                <h3>Courses</h3>
+                <p>Manage course catalog</p>
+                <a asp-controller="Courses"
+                   asp-action="Index"
+                   class="btn btn-outline-light">
+                   Open
+                </a>
+            </div>
+        </div>
+
+        <!-- ENROLLMENTS -->
+        <div class="col-md-4 mb-4">
+            <div class="card bg-dark text-light p-4 shadow-lg">
+                <h3>Enrollments</h3>
+                <p>Manage enrollments</p>
+                <a asp-controller="Enrollments"
+                   asp-action="Index"
+                   class="btn btn-outline-light">
+                   Open
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,43 @@
+@model StudentPortalMVC.Models.Course
+
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+<div class="container mt-4">
+    <h2>Create Course</h2>
+    <hr />
+
+    <form asp-action="Create">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DurationDays" class="form-label"></label>
+            <input asp-for="DurationDays" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Fee" class="form-label"></label>
+            <input asp-for="Fee" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Level" class="form-label"></label>
+            <input asp-for="Level" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="IsActive" class="form-label"></label>
+            <select asp-for="IsActive" class="form-select">
+                <option value="true">Active</option>
+                <option value="false">Inactive</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-dark">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+@model StudentPortalMVC.Models.Course
+
+@{
+    ViewData["Title"] = "Delete Course";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger">Delete Course</h2>
+    <hr />
+
+    <div class="card bg-dark text-light p-3">
+        <h4>Are you sure you want to delete this course?</h4>
+        <dl class="row mt-3">
+            <dt class="col-sm-3">Title</dt>
+            <dd class="col-sm-9">@Model.Title</dd>
+
+            <dt class="col-sm-3">Duration</dt>
+            <dd class="col-sm-9">@Model.DurationDays days</dd>
+
+            <dt class="col-sm-3">Fee</dt>
+            <dd class="col-sm-9">@Model.Fee</dd>
+
+            <dt class="col-sm-3">Level</dt>
+            <dd class="col-sm-9">@Model.Level</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="CourseId" />
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>

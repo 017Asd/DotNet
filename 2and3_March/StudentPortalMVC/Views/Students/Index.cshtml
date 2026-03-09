@@ -1,0 +1,58 @@
+@model IEnumerable<StudentPortalMVC.Models.Student>
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Students</h2>
+        <a asp-action="Create" class="btn btn-primary">+ Add Student</a>
+    </div>
+
+    <!-- Search + Status Filter -->
+    <div class="row mb-3">
+        <div class="col-md-8">
+            <input type="text"
+                   id="studentSearch"
+                   placeholder="Search students..."
+                   class="form-control" />
+        </div>
+
+        <div class="col-md-4">
+            <select id="statusFilter" class="form-select">
+                <option value="All">All</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="studentsTable">
+        @await Html.PartialAsync("_StudentsTable", Model)
+    </div>
+
+</div>
+
+@section Scripts{
+<script>
+$(document).ready(function () {
+
+    function loadStudents() {
+
+        var term = $("#studentSearch").val();
+        var status = $("#statusFilter").val();
+
+        $.ajax({
+            url: '/Students/Search',
+            type: 'GET',
+            data: { term: term, status: status },
+            success: function (result) {
+                $("#studentsTable").html(result);
+            }
+        });
+    }
+
+    $("#studentSearch").on("keyup", loadStudents);
+    $("#statusFilter").on("change", loadStudents);
+
+});
+</script>
+}

@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Employee.Data.Models.Employee>
+
+<h2>Dashboard</h2>
+
+<button class="btn btn-primary mb-3" onclick="toggleEmployees()">
+    Toggle Employees
+</button>
+
+<div id="employeeSection" style="display:none;">
+
+    <a asp-controller="Employee" asp-action="Create" class="btn btn-success mb-3">
+        Add Employee
+    </a>
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Email</td>
+                <td>@emp.Department</td>
+                <td>@emp.Salary</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+</div>
+
+<script>
+function toggleEmployees() {
+    var section = document.getElementById("employeeSection");
+
+    if (section.style.display === "none") {
+        section.style.display = "block";
+    } else {
+        section.style.display = "none";
+    }
+}
+</script>
